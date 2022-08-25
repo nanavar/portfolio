@@ -160,7 +160,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     grid-template-columns: 1fr;
 
-    @media only screen and (min-width: 920px) {
+    @media only screen and (min-width: 1140px) {
       grid-template-columns: 1fr 1fr;
       margin: auto;
     }
@@ -172,7 +172,7 @@ body::-webkit-scrollbar-thumb {
       grid-column: 1;
       grid-row: 2/3;
 
-      @media only screen and (min-width: 920px) {
+      @media only screen and (min-width: 1140px) {
         grid-column: 1;
         grid-row: 1/2;
         margin: auto;
@@ -191,7 +191,7 @@ body::-webkit-scrollbar-thumb {
           animation: morph 3s linear infinite;
         }
 
-        @media only screen and (min-width: 920px) {
+        @media only screen and (min-width: 1140px) {
           max-width: 500px;
           margin: 13rem auto;
         }
@@ -219,7 +219,7 @@ body::-webkit-scrollbar-thumb {
       grid-row: 1/2;
       width: 100%;
 
-      @media only screen and (min-width: 920px) {
+      @media only screen and (min-width: 1140px) {
         padding-top: 10rem;
         margin: 0;
         text-align: left;
@@ -240,7 +240,7 @@ body::-webkit-scrollbar-thumb {
         letter-spacing: 5px;
         font-weight: 800;
 
-        @media only screen and (min-width: 920px) {
+        @media only screen and (min-width: 1140px) {
           font-size: 2.5rem;
         }
 
@@ -254,7 +254,7 @@ body::-webkit-scrollbar-thumb {
 
       h1.name-1 {
         margin-left: 0;
-        @media only screen and (min-width: 920px) {
+        @media only screen and (min-width: 1140px) {
           margin-left: 0;
         }
       }
@@ -268,7 +268,7 @@ body::-webkit-scrollbar-thumb {
           margin-left: 15%;
         }
 
-        @media only screen and (min-width: 920px) {
+        @media only screen and (min-width: 1140px) {
           margin-top: -1rem;
           margin-left: 10%;
         }
@@ -318,7 +318,7 @@ body::-webkit-scrollbar-thumb {
           padding-right: 10px;
           margin-bottom: 3.5rem;
 
-          @media only screen and (min-width: 920px) {
+          @media only screen and (min-width: 1140px) {
             margin-bottom: 0;
           }
 
@@ -366,7 +366,7 @@ body::-webkit-scrollbar-thumb {
     grid-row: 3/4;
     margin: auto;
 
-    @media only screen and (min-width: 920px) {
+    @media only screen and (min-width: 1140px) {
       grid-column: 2;
       grid-row: 2/3;
       margin: 0;
@@ -386,7 +386,7 @@ body::-webkit-scrollbar-thumb {
       color: #f2f3f3;
       text-align: center;
 
-      @media only screen and (min-width: 920px) {
+      @media only screen and (min-width: 1140px) {
         position: absolute;
         display: inline-block;
         text-align: left;
@@ -398,7 +398,7 @@ body::-webkit-scrollbar-thumb {
     .skill-bars {
       display: block;
 
-      @media (min-width: 920px) {
+      @media (min-width: 1140px) {
         margin-top: -21rem;
       }
 
@@ -407,7 +407,7 @@ body::-webkit-scrollbar-thumb {
         flex-wrap: wrap;
         width: 300px;
 
-        @media only screen and (min-width: 920px) {
+        @media only screen and (min-width: 1140px) {
           justify-content: flex-start;
           width: 600px;
         }
@@ -420,7 +420,7 @@ body::-webkit-scrollbar-thumb {
           width: 193px;
           right: 0;
 
-          @media only screen and (min-width: 920px) {
+          @media only screen and (min-width: 1140px) {
             width: 430px;
           }
 
@@ -544,13 +544,14 @@ body::-webkit-scrollbar-thumb {
         p {
           margin-left: 2%;
           font-size: 1rem;
+          padding-top: 3px;
           letter-spacing: 2px;
           font-weight: 600;
           line-height: 30px;
           text-align: left;
           opacity: 0;
 
-          @media only screen and (min-width: 920px) {
+          @media only screen and (min-width: 1105px) {
             margin-left: 5%;
           }
         }
@@ -697,7 +698,7 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 5px;
     font-weight: 800;
 
-    @media (min-width: 920px) {
+    @media (min-width: 1140px) {
       font-size: 4rem;
       padding: auto 0.2rem;
     }
