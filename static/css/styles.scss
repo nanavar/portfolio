@@ -3,6 +3,7 @@
   --body-font: "Khula", sans-serif;
   --dark-accent-color: #66888f;
   --light-accent-color: #a4c6cd;
+  --light-background: #f2f3f3;
 }
 
 * {
@@ -19,7 +20,7 @@ html {
 body {
   font-family: var(--body-font);
   color: #131313;
-  background-color: #f2f3f3;
+  background-color: var(--light-background);
 }
 
 h1,
@@ -399,13 +400,13 @@ a {
             }
 
             100% {
-              width: 90%;
+              width: 100%;
             }
           }
 
           &.css:before {
             animation: css_load 1s ease-in forwards;
-            animation-delay: 1.5s;
+            animation-delay: 1.2s;
           }
 
           @keyframes css_load {
@@ -414,13 +415,13 @@ a {
             }
 
             100% {
-              width: 70%;
+              width: 90%;
             }
           }
 
           &.boot:before {
             animation: boot_load 1s ease-in forwards;
-            animation-delay: 2s;
+            animation-delay: 1.4s;
           }
 
           @keyframes boot_load {
@@ -429,16 +430,16 @@ a {
             }
 
             100% {
-              width: 90%;
+              width: 85%;
             }
           }
 
-          &.cSharp:before {
-            animation: cSharp_load 1s ease-in forwards;
-            animation-delay: 2.5s;
+          &.vue:before {
+            animation: vue_load 1s ease-in forwards;
+            animation-delay: 1.8s;
           }
 
-          @keyframes cSharp_load {
+          @keyframes vue_load {
             0% {
               width: 0;
             }
@@ -450,7 +451,7 @@ a {
 
           &.js:before {
             animation: js_load 0.5s ease-in forwards;
-            animation-delay: 3s;
+            animation-delay: 2s;
           }
 
           @keyframes js_load {
@@ -465,7 +466,7 @@ a {
 
           &.py:before {
             animation: py_load 1s ease-in forwards;
-            animation-delay: 3.5s;
+            animation-delay: 2.2s;
           }
 
           @keyframes py_load {
@@ -480,7 +481,7 @@ a {
 
           &.fig:before {
             animation: fig_load 1s ease-in forwards;
-            animation-delay: 4s;
+            animation-delay: 2.4s;
           }
 
           @keyframes fig_load {
@@ -489,14 +490,14 @@ a {
             }
 
             100% {
-              width: 70%;
+              width: 90%;
             }
           }
         }
 
         p {
           margin-left: 2%;
-          font-size: 1rem;
+          font-size: 0.8rem;
           padding-top: 3px;
           letter-spacing: 2px;
           font-weight: 600;
@@ -506,6 +507,7 @@ a {
 
           @media only screen and (min-width: 1105px) {
             margin-left: 5%;
+            font-size: 1rem;
           }
         }
 
@@ -516,32 +518,32 @@ a {
 
         p.css_text {
           animation: fade 0.5s ease forwards;
-          animation-delay: 2s;
+          animation-delay: 1.7s;
         }
 
         p.boot_text {
           animation: fade 0.5s ease forwards;
-          animation-delay: 2.5s;
+          animation-delay: 1.9s;
         }
 
-        p.cSharp_text {
+        p.vue_text {
           animation: fade 0.5s ease forwards;
-          animation-delay: 3s;
+          animation-delay: 2.1s;
         }
 
         p.js_text {
           animation: fade 0.5s ease forwards;
-          animation-delay: 3.5s;
+          animation-delay: 2.5s;
         }
 
         p.py_text {
           animation: fade 0.5s ease forwards;
-          animation-delay: 4s;
+          animation-delay: 2.7s;
         }
 
         p.fig_text {
           animation: fade 0.5s ease forwards;
-          animation-delay: 4.5s;
+          animation-delay: 2.9s;
         }
 
         @keyframes fade {
@@ -553,81 +555,6 @@ a {
             opacity: 1;
           }
         }
-      }
-    }
-  }
-}
-
-///* TITLES *///
-
-.title-animation {
-  width: 100%;
-  .dots_animate {
-    margin: 50px auto;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    animation: falling-dots 1.5s forwards;
-
-    @keyframes falling-dots {
-      0% {
-        background-color: #ffffff;
-      }
-
-      40% {
-        background-color: #fff;
-        box-shadow: 0 20px 0 #a4c6cd;
-      }
-
-      80% {
-        background-color: #fff;
-        box-shadow: 0 20px 0 #bed6db, 0 40px 0 #99b3b8;
-      }
-      100% {
-        background-color: #fff;
-        box-shadow: 0 20px 0 #bed6db, 0 40px 0 #99b3b8;
-        opacity: 1;
-      }
-    }
-  }
-
-  .dots {
-    margin: 50px auto;
-  }
-
-  .title {
-    text-align: center;
-    font-size: 2.8rem;
-    line-height: 100px;
-    text-transform: uppercase;
-    color: transparent;
-  }
-
-  .title_animate {
-    text-align: center;
-    font-size: 2.8rem;
-    line-height: 100px;
-    font-weight: 900;
-    margin-bottom: 50px;
-    color: transparent;
-    animation: fade-in-title 0.3s ease-in-out forwards;
-    animation-delay: 0.6s;
-
-    @keyframes fade-in-title {
-      0% {
-        transform: scale(0, 0.025);
-        opacity: 0;
-      }
-      50% {
-        opacity: 0.5;
-        transform: scale(0, 0.025);
-        border-radius: 10px;
-      }
-      100% {
-        background-color: none;
-        transform: scale(1.2, 1.2);
-        opacity: 1;
-        color: #66888f;
       }
     }
   }
@@ -717,13 +644,13 @@ a {
         filter: grayscale(1);
 
         &.project_1 {
-          background-image: url("/static/images/project1.PNG");
+          background-image: url("/static/images/yesplants.PNG");
         }
         &.project_2 {
-          background-image: url("/static/images/project2.PNG");
+          background-image: url("/static/images/sushiro.PNG");
         }
         &.project_3 {
-          background-image: url("/static/images/project3.PNG");
+          background-image: url("/static/images/schooly.PNG");
         }
         &.project_4 {
           background-image: url("/static/images/project5.PNG");
@@ -887,7 +814,7 @@ a {
 }
 
 ///* SUCCESS *///
-///
+
 #success {
   height: 60vh;
   margin: 0 auto;

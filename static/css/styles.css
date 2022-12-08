@@ -3,6 +3,7 @@
   --body-font: "Khula", sans-serif;
   --dark-accent-color: #66888f;
   --light-accent-color: #a4c6cd;
+  --light-background: #f2f3f3;
 }
 
 * {
@@ -20,7 +21,7 @@ html {
 body {
   font-family: var(--body-font);
   color: #131313;
-  background-color: #f2f3f3;
+  background-color: var(--light-background);
 }
 
 h1,
@@ -499,7 +500,7 @@ a:hover {
     width: 0;
   }
   100% {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -508,15 +509,15 @@ a:hover {
     width: 0;
   }
   100% {
-    width: 90%;
+    width: 100%;
   }
 }
 
 .header .skills .skill-bars .bar .skill-bar.css:before {
   -webkit-animation: css_load 1s ease-in forwards;
           animation: css_load 1s ease-in forwards;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
 @-webkit-keyframes css_load {
@@ -524,7 +525,7 @@ a:hover {
     width: 0;
   }
   100% {
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -533,15 +534,15 @@ a:hover {
     width: 0;
   }
   100% {
-    width: 70%;
+    width: 90%;
   }
 }
 
 .header .skills .skill-bars .bar .skill-bar.boot:before {
   -webkit-animation: boot_load 1s ease-in forwards;
           animation: boot_load 1s ease-in forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
 }
 
 @-webkit-keyframes boot_load {
@@ -549,7 +550,7 @@ a:hover {
     width: 0;
   }
   100% {
-    width: 90%;
+    width: 85%;
   }
 }
 
@@ -558,18 +559,18 @@ a:hover {
     width: 0;
   }
   100% {
-    width: 90%;
+    width: 85%;
   }
 }
 
-.header .skills .skill-bars .bar .skill-bar.cSharp:before {
-  -webkit-animation: cSharp_load 1s ease-in forwards;
-          animation: cSharp_load 1s ease-in forwards;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
+.header .skills .skill-bars .bar .skill-bar.vue:before {
+  -webkit-animation: vue_load 1s ease-in forwards;
+          animation: vue_load 1s ease-in forwards;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
 }
 
-@-webkit-keyframes cSharp_load {
+@-webkit-keyframes vue_load {
   0% {
     width: 0;
   }
@@ -578,7 +579,7 @@ a:hover {
   }
 }
 
-@keyframes cSharp_load {
+@keyframes vue_load {
   0% {
     width: 0;
   }
@@ -590,8 +591,8 @@ a:hover {
 .header .skills .skill-bars .bar .skill-bar.js:before {
   -webkit-animation: js_load 0.5s ease-in forwards;
           animation: js_load 0.5s ease-in forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 @-webkit-keyframes js_load {
@@ -615,8 +616,8 @@ a:hover {
 .header .skills .skill-bars .bar .skill-bar.py:before {
   -webkit-animation: py_load 1s ease-in forwards;
           animation: py_load 1s ease-in forwards;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
 }
 
 @-webkit-keyframes py_load {
@@ -640,8 +641,8 @@ a:hover {
 .header .skills .skill-bars .bar .skill-bar.fig:before {
   -webkit-animation: fig_load 1s ease-in forwards;
           animation: fig_load 1s ease-in forwards;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
 }
 
 @-webkit-keyframes fig_load {
@@ -649,7 +650,7 @@ a:hover {
     width: 0;
   }
   100% {
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -658,13 +659,13 @@ a:hover {
     width: 0;
   }
   100% {
-    width: 70%;
+    width: 90%;
   }
 }
 
 .header .skills .skill-bars .bar p {
   margin-left: 2%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding-top: 3px;
   letter-spacing: 2px;
   font-weight: 600;
@@ -676,6 +677,7 @@ a:hover {
 @media only screen and (min-width: 1105px) {
   .header .skills .skill-bars .bar p {
     margin-left: 5%;
+    font-size: 1rem;
   }
 }
 
@@ -689,43 +691,43 @@ a:hover {
 .header .skills .skill-bars .bar p.css_text {
   -webkit-animation: fade 0.5s ease forwards;
           animation: fade 0.5s ease forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
 }
 
 .header .skills .skill-bars .bar p.boot_text {
+  -webkit-animation: fade 0.5s ease forwards;
+          animation: fade 0.5s ease forwards;
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+.header .skills .skill-bars .bar p.vue_text {
+  -webkit-animation: fade 0.5s ease forwards;
+          animation: fade 0.5s ease forwards;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+
+.header .skills .skill-bars .bar p.js_text {
   -webkit-animation: fade 0.5s ease forwards;
           animation: fade 0.5s ease forwards;
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s;
 }
 
-.header .skills .skill-bars .bar p.cSharp_text {
-  -webkit-animation: fade 0.5s ease forwards;
-          animation: fade 0.5s ease forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-}
-
-.header .skills .skill-bars .bar p.js_text {
-  -webkit-animation: fade 0.5s ease forwards;
-          animation: fade 0.5s ease forwards;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
-}
-
 .header .skills .skill-bars .bar p.py_text {
   -webkit-animation: fade 0.5s ease forwards;
           animation: fade 0.5s ease forwards;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-delay: 2.7s;
+          animation-delay: 2.7s;
 }
 
 .header .skills .skill-bars .bar p.fig_text {
   -webkit-animation: fade 0.5s ease forwards;
           animation: fade 0.5s ease forwards;
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
+  -webkit-animation-delay: 2.9s;
+          animation-delay: 2.9s;
 }
 
 @-webkit-keyframes fade {
@@ -747,130 +749,6 @@ a:hover {
   }
   to {
     opacity: 1;
-  }
-}
-
-.title-animation {
-  width: 100%;
-}
-
-.title-animation .dots_animate {
-  margin: 50px auto;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  -webkit-animation: falling-dots 1.5s forwards;
-          animation: falling-dots 1.5s forwards;
-}
-
-@-webkit-keyframes falling-dots {
-  0% {
-    background-color: #ffffff;
-  }
-  40% {
-    background-color: #fff;
-    -webkit-box-shadow: 0 20px 0 #a4c6cd;
-            box-shadow: 0 20px 0 #a4c6cd;
-  }
-  80% {
-    background-color: #fff;
-    -webkit-box-shadow: 0 20px 0 #bed6db, 0 40px 0 #99b3b8;
-            box-shadow: 0 20px 0 #bed6db, 0 40px 0 #99b3b8;
-  }
-  100% {
-    background-color: #fff;
-    -webkit-box-shadow: 0 20px 0 #bed6db, 0 40px 0 #99b3b8;
-            box-shadow: 0 20px 0 #bed6db, 0 40px 0 #99b3b8;
-    opacity: 1;
-  }
-}
-
-@keyframes falling-dots {
-  0% {
-    background-color: #ffffff;
-  }
-  40% {
-    background-color: #fff;
-    -webkit-box-shadow: 0 20px 0 #a4c6cd;
-            box-shadow: 0 20px 0 #a4c6cd;
-  }
-  80% {
-    background-color: #fff;
-    -webkit-box-shadow: 0 20px 0 #bed6db, 0 40px 0 #99b3b8;
-            box-shadow: 0 20px 0 #bed6db, 0 40px 0 #99b3b8;
-  }
-  100% {
-    background-color: #fff;
-    -webkit-box-shadow: 0 20px 0 #bed6db, 0 40px 0 #99b3b8;
-            box-shadow: 0 20px 0 #bed6db, 0 40px 0 #99b3b8;
-    opacity: 1;
-  }
-}
-
-.title-animation .dots {
-  margin: 50px auto;
-}
-
-.title-animation .title {
-  text-align: center;
-  font-size: 2.8rem;
-  line-height: 100px;
-  text-transform: uppercase;
-  color: transparent;
-}
-
-.title-animation .title_animate {
-  text-align: center;
-  font-size: 2.8rem;
-  line-height: 100px;
-  font-weight: 900;
-  margin-bottom: 50px;
-  color: transparent;
-  -webkit-animation: fade-in-title 0.3s ease-in-out forwards;
-          animation: fade-in-title 0.3s ease-in-out forwards;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-@-webkit-keyframes fade-in-title {
-  0% {
-    -webkit-transform: scale(0, 0.025);
-            transform: scale(0, 0.025);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-    -webkit-transform: scale(0, 0.025);
-            transform: scale(0, 0.025);
-    border-radius: 10px;
-  }
-  100% {
-    background-color: none;
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
-    opacity: 1;
-    color: #66888f;
-  }
-}
-
-@keyframes fade-in-title {
-  0% {
-    -webkit-transform: scale(0, 0.025);
-            transform: scale(0, 0.025);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-    -webkit-transform: scale(0, 0.025);
-            transform: scale(0, 0.025);
-    border-radius: 10px;
-  }
-  100% {
-    background-color: none;
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
-    opacity: 1;
-    color: #66888f;
   }
 }
 
@@ -984,15 +862,15 @@ a:hover {
 }
 
 .portfolio .project_section .project_container .project_container-image.project_1 {
-  background-image: url("/static/images/project1.PNG");
+  background-image: url("/static/images/yesplants.PNG");
 }
 
 .portfolio .project_section .project_container .project_container-image.project_2 {
-  background-image: url("/static/images/project2.PNG");
+  background-image: url("/static/images/sushiro.PNG");
 }
 
 .portfolio .project_section .project_container .project_container-image.project_3 {
-  background-image: url("/static/images/project3.PNG");
+  background-image: url("/static/images/schooly.PNG");
 }
 
 .portfolio .project_section .project_container .project_container-image.project_4 {
